@@ -1,0 +1,20 @@
+   71  mkdir devstack
+   72  cd devstack
+   73  git init
+   74  mv ../*.tar .
+   76  git status
+   77  git commit -a
+   78  git config --global user.email "mintmp@yahoo.com"
+   79  git config --global user.name "Min Huang"
+   80  git commit -a
+   81  git add *.tar
+   82  git status
+   83  git commit -a
+   84  git remote add origin https://github.com/Min-Huang/Single-Node-Devstack.git
+   85  touch README.md
+   86  vim README.md
+   87  git status
+   88  git add README.md
+   89  git commit -m "Added a README file"
+   90  git status
+   91  git push -u origin master
